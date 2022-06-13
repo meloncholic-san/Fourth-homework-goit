@@ -126,6 +126,11 @@ color: var(--logo-light-txt);
 /*Секция шапка*/
 .hat{
     background-color: var(--primary-dark-bg);
+    background-image: linear-gradient(to bottom,rgba(47, 48, 58,0.4),rgba(47, 48, 58,0.4))
+    ,url(../images/hat-background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hat-wrapper{
     padding-top: 200px;
@@ -153,9 +158,7 @@ margin-bottom:30px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
+display: block;
 letter-spacing: 0.06em;
 color: var(--primary-dark-txt);
 background-color: var(--accent-txt);
@@ -166,6 +169,7 @@ min-width: 200px;
 max-width: 220px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+
 
 }
 
@@ -256,6 +260,7 @@ color: var(--primary-light-txt);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .crew-list-item:last-child{
     margin: 0;
@@ -411,3 +416,7 @@ font-style: normal;
     clip-path: inset(50%);
     margin: -1px;
   }
+
+.test{
+    fill:red;
+}
