@@ -226,10 +226,12 @@ border-radius: 4px;
     display: flex;
     margin-bottom: 30px;
     background-color: var(--secondary-light-bg);
+    border-radius: 4px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
 }
-.speciality-item-icon{
-    margin: 25px auto;
-}
+
 .speciality-list-item:last-child{
     margin: 0;
 }
@@ -287,6 +289,7 @@ color: var(--primary-light-txt);
 .crew{
     padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--secondary-light-bg)
 }
 .crew-title{
     margin-bottom: 50px;
@@ -350,7 +353,7 @@ line-height: 1.19;
 
 /*Клиенты*/
 .clients{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-caption{
@@ -374,24 +377,28 @@ margin-bottom: 50px;
 .clients-item{
     flex-basis: calc(100% / 6);
     border: 1px solid var(--crew-icon-primary);
-    max-width: 170px;
-    max-height: 92px;
+    min-width: 170px;
+    min-height: 92px;
     border-radius: 4px;
 }
 .clients-item:hover{
     border: 1px solid var(--accent-txt);
 }
+
+.clients-item:hover .clients-icon{
+    fill: var(--accent-txt);
+}
+
 .clients-icon-link{
     min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clients-icon{
-    margin: 16px 32px;
     fill: var(--crew-icon-primary);
 }
 
-.clients-icon:hover{
-    fill: var(--accent-txt);
-}
 
 
 
